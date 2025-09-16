@@ -396,5 +396,21 @@
     </footer>
 
     <script src="script.js"></script>
+    <!-- Add this script tag before closing </body> tag -->
+<script>
+// Simple fix for home button
+document.addEventListener('DOMContentLoaded', function() {
+    const homeButton = document.querySelector('a[href="#home"]');
+    if (homeButton) {
+        homeButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+});
+</script>
 </body>
 </html>
