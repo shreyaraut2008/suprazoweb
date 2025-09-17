@@ -217,8 +217,11 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.3rem;
     color: #b3b3b3;
     margin-bottom: 2.5rem;
-    line-height: 1.6;
+    line-height: 1.8; /* Increased line height for better spacing */
+    max-width: 500px; /* Limit width for better readability */
     animation: fadeInUp 0.6s ease-out 0.4s both;
+    word-spacing: 0.1em; /* Add slight spacing between words */
+    letter-spacing: 0.02em; /* Add slight letter spacing */
 }
 
 .hero-cta {

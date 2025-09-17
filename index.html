@@ -397,20 +397,12 @@
 
     <script src="script.js"></script>
     <!-- Add this script tag before closing </body> tag -->
-<script>
-// Simple fix for home button
-document.addEventListener('DOMContentLoaded', function() {
-    const homeButton = document.querySelector('a[href="#home"]');
-    if (homeButton) {
-        homeButton.addEventListener('click', function(e) {
-            e.preventDefault();
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    }
-});
-</script>
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="Suvi"
+  agent-id="a32762d0-65ef-466a-876e-37f75977d607"
+  language-code="en"
+></df-messenger>
 </body>
 </html>
